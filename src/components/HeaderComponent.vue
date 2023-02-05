@@ -11,7 +11,7 @@
                     <RouterLink to="/about"><a class="text-gray-50">Latest News</a></RouterLink>
                     <RouterLink to="/about"><a class="text-gray-50">FAQ's</a></RouterLink>
                     <RouterLink to="/about"><a class="text-gray-50">Our Focus</a></RouterLink>
-                    <RouterLink to="/about"><a class="text-gray-50">Contact Us</a></RouterLink>
+                    <RouterLink to="/contact"><a class="text-gray-50">Contact Us</a></RouterLink>
                 </nav>
                 <button @click.prevent="toggleMenu" >
                     <IconBuger :class="!showMenu ? 'w-8 h-8 text-white' : 'w-10 h-10 text-gold-350'" />

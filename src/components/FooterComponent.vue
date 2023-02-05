@@ -3,13 +3,13 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 py-8 w-fit mx-auto gap-20">
             <img class="h-[13.188em]" src="@/assets/images/footer/LegacyLogo@2x.png" alt="" srcset="">
             <div class="">
-                <h1 class="__heading">Quick Links</h1>
+                <h1 class="__heading font-playfair">Quick Links</h1>
                 <ul class="__sub__items">
                     <li v-for="link in quickLinks" :key="link.name"><a href="#">{{ link.name }}</a></li>
                 </ul>
             </div>
             <div class="__sub__items">
-                <h1 class="__heading">Contact Information</h1>
+                <h1 class="__heading font-playfair">Contact Information</h1>
                 <p>Phone{{storeInformation.phone}}</p>
                 <p>Email{{storeInformation.email}}</p>
                 <div class="flex h-[3.5em]">

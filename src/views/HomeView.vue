@@ -15,7 +15,7 @@
             <div class="">
                 <MiddleSectionHeader class="py-[1.125em] text-white before:bg-white after:bg-white" title="Our" sub-title="Services"/> 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-fit mt-10">
-                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] bg-cover cursor-pointer relative bg-center h-[22.1875em] bg-red-500">
+                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] bg-cover cursor-pointer relative bg-center h-[22.1875em] hover-scale">
                         <button class="text-white h-[2.625em] absolute bottom-4 left-0 right-0 mx-auto w-full max-w-[10.438em] text-sm bg-gradient-to-r from-gold-250 to-gold-450">Read More</button>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
             <MiddleSectionHeader class="py-[3.125em] text-white before:bg-white after:bg-white" title="CLIENT" sub-title="TESTIMONIALS"/>
             <div class="grid md:grid-cols-2 gap-[3.125em] lg:grid-cols-3 mx-auto max-w-[1200px]">
                 <div class="bg-green-650 text-white p-[1.563em] space-y-3 flex flex-col items-center text-center" v-for="(item, index) in testimonial.testimonials" :key="index">
-                    <h1 class="text-[1.563rem] font-semibold">{{ item.title }}</h1>
+                    <h1 class="text-[1.563rem] font-playfair font-semibold">{{ item.title }}</h1>
                     <hr class="w-20">
                     <p class="text-[1.188rem] font-thin">{{ item.information }}</p>
                 </div>
@@ -64,17 +64,17 @@
     import SideSectionHeader from '@/components/SideSectionHeader.vue';
     import PartnershipsSection from '@/components/home/PartnershipsSection.vue'
     import GetInTouchSection from '@/components/GetInTouchSection.vue'
-import CarouselComponent from '@/components/CarouselComponent.vue'
+    import CarouselComponent from '@/components/CarouselComponent.vue'
     export default {
         name: 'HomeView',
         components: {
-    LayoutComponent,
-    MiddleSectionHeader,
-    SideSectionHeader,
-    PartnershipsSection,
-    GetInTouchSection,
-    CarouselComponent
-},
+            LayoutComponent,
+            MiddleSectionHeader,
+            SideSectionHeader,
+            PartnershipsSection,
+            GetInTouchSection,
+            CarouselComponent
+        },
         data() {
             return {
                 isLimited: true,
@@ -140,6 +140,11 @@ import CarouselComponent from '@/components/CarouselComponent.vue'
 <style lang="scss">
     $green: #032628;
     $green2: #03353A;
+
+    .hover-scale:hover {
+        background-size: 110%;
+        transition: background-size 1s ease-in-out;
+    }
 
     .__shaped_bg {
         background:

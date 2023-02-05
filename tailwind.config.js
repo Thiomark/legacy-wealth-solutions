@@ -13,7 +13,10 @@ module.exports = {
           650: '#03353A',
           750: '#032628'
         }
-      }
+      },
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif']
+      },
     },
   },
   plugins: [],
