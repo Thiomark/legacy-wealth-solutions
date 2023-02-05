@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent>
+    <main>
         <CarouselComponent />
         <section class="max-w-[1500px] py-10 mx-auto w-full lg:grid grid-cols-[1fr_auto]">
             <div class="p-8 text-white text-left bg-green-650">
@@ -44,7 +44,7 @@
         </section>
         <PartnershipsSection />
         <GetInTouchSection />
-    </LayoutComponent>
+    </main>
 </template>
 
 <script>
@@ -59,7 +59,6 @@
     import testimonialsBG from '@/assets/images/home/home-page-testimonials-treated.png';
 
 
-    import LayoutComponent from '@/components/LayoutComponent.vue';
     import MiddleSectionHeader from '@/components/MiddleSectionHeader.vue';
     import SideSectionHeader from '@/components/SideSectionHeader.vue';
     import PartnershipsSection from '@/components/home/PartnershipsSection.vue'
@@ -68,7 +67,6 @@
     export default {
         name: 'HomeView',
         components: {
-            LayoutComponent,
             MiddleSectionHeader,
             SideSectionHeader,
             PartnershipsSection,

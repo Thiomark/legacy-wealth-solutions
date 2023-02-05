@@ -51,32 +51,3 @@
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    form {
-        
-        input, textarea {
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            border: 1px solid #4D4D4D;
-            padding: .6em;
-        }
-
-        div {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: .6em;
-        }
-
-        label {
-            display: inline-block;
-          }
-        
-          input[type="checkbox"] {
-            vertical-align: middle;
-            margin-right: 10px;
-          }
-        
-    }
-
-    
-</style>
