@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purple: {
-          650: '#03353A'
-        },
         gold: {
           350: '#DAAC74'
+        },
+        green: {
+          650: '#03353A',
+          750: '#032628'
         }
       }
     },
