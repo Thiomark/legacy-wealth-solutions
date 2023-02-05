@@ -1,6 +1,6 @@
 
 <template>
-    <section class="__shaped_bg">
+    <section class="__shaped_bg"  :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns-gold.png') + ')' }">
         <div class="__fade">
             <div class="flex justify-between items-center px-[8%] h-full">
                 <p class="text-white flex flex-col justify-center font-playfair text-[2.188rem]">Let’s get in touch <span class="block font-sans text-[1.5rem] font-thin -mt-3">Contact us for assistance</span></p>
@@ -14,14 +14,6 @@
     $green2: #F1CC98;
     $green: #C89361;
 
-    .__shaped_bg {
-        background:
-            conic-gradient(from -45deg at calc(100%/3) calc(100%/3), $green 90deg, #0000 0),
-            conic-gradient(from -135deg at calc(100%/3) calc(2*100%/3), $green 90deg, $green2 0 135deg, #0000 0),
-            conic-gradient(from 135deg at calc(2*100%/3) calc(2*100%/3), $green 90deg, $green2 0 135deg, #0000 0),
-            conic-gradient(from 45deg at calc(2*100%/3) calc(100%/3), $green 90deg, $green2 0 135deg, #0000 0,$green 0 225deg,$green2 0);
-        background-size: 30px 30px;
-    }
     .__fade {
         max-width: 70%;
         width: 100%;

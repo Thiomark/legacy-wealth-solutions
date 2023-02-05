@@ -11,11 +11,13 @@
             </div>
             <img src="@/assets/images/home/Rectangle 49@2x.png" class="h-[27.25em] mx-auto" alt="" srcset="">
         </section>
-        <section class="bg-green-650 py-6 pb-20 __shaped_bg">
+        <section class="py-6 pb-20 __shaped_bg" 
+            :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns.png') + ')' }"
+            >
             <div class="">
                 <MiddleSectionHeader class="py-[1.125em] text-white before:bg-white after:bg-white" title="Our" sub-title="Services"/> 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-fit mt-10">
-                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] bg-cover cursor-pointer relative bg-center h-[22.1875em] hover-scale">
+                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] transition ease-in-out duration-300 hover: bg-cover cursor-pointer relative bg-center h-[22.1875em] hover-scale">
                         <button class="text-white h-[2.625em] absolute bottom-4 left-0 right-0 mx-auto w-full max-w-[10.438em] text-sm bg-gradient-to-r from-gold-250 to-gold-450">Read More</button>
                     </div>
                 </div>
@@ -136,20 +138,7 @@
 </script>
 
 <style lang="scss">
-    $green: #032628;
-    $green2: #03353A;
-
     .hover-scale:hover {
-        background-size: 110%;
-        transition: background-size 1s ease-in-out;
-    }
-
-    .__shaped_bg {
-        background:
-            conic-gradient(from -45deg at calc(100%/3) calc(100%/3), $green 90deg, #0000 0),
-            conic-gradient(from -135deg at calc(100%/3) calc(2*100%/3), $green 90deg, $green2 0 135deg, #0000 0),
-            conic-gradient(from 135deg at calc(2*100%/3) calc(2*100%/3), $green 90deg, $green2 0 135deg, #0000 0),
-            conic-gradient(from 45deg at calc(2*100%/3) calc(100%/3), $green 90deg, $green2 0 135deg, #0000 0,$green 0 225deg,$green2 0);
-        background-size: 30px 30px;
+        background-size: 120%;
     }
 </style>

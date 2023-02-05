@@ -7,7 +7,7 @@
             <div class="flex items-center space-x-12">
                 <nav v-if="showMenu" class="space-x-4 w-full hidden lg:block font-extralight text-[1.563rem] text-gray-50">
                     <RouterLink to="/"><a class="text-gray-50">Home</a></RouterLink>
-                    <a class="text-gray-50 cursor-pointer relative" @click.prevent="toggleSubMenu">
+                    <a v-click-outside="hide" class="text-gray-50 cursor-pointer relative" @click.prevent="toggleSubMenu">
                         <span>Services 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" :class="showSubMenu && 'rotate-180'" class="bi transition duration-300 ease-in-out inline-block w-4 h-4 bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -37,6 +37,8 @@
 
 <script>
     import IconBuger from './icons/IconBuger.vue';
+    import ClickOutside from 'vue-click-outside'
+
     export default {
         name: 'HomeView',
         components : {
@@ -54,7 +56,14 @@
             },
             toggleSubMenu() {
                 this.showSubMenu = !this.showSubMenu
+            },
+            hide () {
+                if(this.showMenu === false) return;
+                this.showSubMenu = false;
             }
+        },
+        directives: {
+            ClickOutside
         }
     }
 

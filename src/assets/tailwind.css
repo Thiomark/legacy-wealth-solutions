@@ -6,3 +6,7 @@
 .btn-gold {
     @apply bg-gradient-to-r from-gold-250 to-gold-450 text-white w-full;
 }
+
+.__shaped_bg {
+    background-size: 10%;
+}
