@@ -5,7 +5,7 @@
             <div class="">
                 <h1 class="__heading font-playfair">Quick Links</h1>
                 <ul class="__sub__items">
-                    <li v-for="link in quickLinks" :key="link.name"><a href="#">{{ link.name }}</a></li>
+                    <li v-for="link in quickLinks" :key="link.name"><a :href="link.path">{{ link.name }}</a></li>
                 </ul>
             </div>
             <div class="__sub__items">
@@ -31,12 +31,12 @@
         data: () => {
             return {
                 quickLinks: [
-                    {name: 'Services', path: ''},
-                    {name: 'Latest News', path: ''},
-                    {name: 'FAQ\'', path: ''},
-                    {name: 'Month\'s Focus', path: ''},
-                    {name: 'Contact Us', path: ''},
-                    {name: 'Privacy Policy', path: ''}
+                    {name: 'Services', path: '/'},
+                    {name: 'Latest News', path: '/'},
+                    {name: 'FAQ\'s', path: '/faqs'},
+                    {name: 'Month\'s Focus', path: '/'},
+                    {name: 'Contact Us', path: '/contact'},
+                    {name: 'Privacy Policy', path: '/'}
                 ],
                 storeInformation
             }

@@ -9,7 +9,7 @@
                     <RouterLink to="/"><a class="text-gray-50">Home</a></RouterLink>
                     <RouterLink to="/about"><a class="text-gray-50">Services</a></RouterLink>
                     <RouterLink to="/about"><a class="text-gray-50">Latest News</a></RouterLink>
-                    <RouterLink to="/about"><a class="text-gray-50">FAQ's</a></RouterLink>
+                    <RouterLink to="/faqs"><a class="text-gray-50">FAQ's</a></RouterLink>
                     <RouterLink to="/about"><a class="text-gray-50">Our Focus</a></RouterLink>
                     <RouterLink to="/contact"><a class="text-gray-50">Contact Us</a></RouterLink>
                 </nav>
