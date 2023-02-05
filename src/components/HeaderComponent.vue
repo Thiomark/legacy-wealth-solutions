@@ -1,6 +1,6 @@
 <template>
     <header class="fixed w-full top-0 h-32 flex items-center justify-center z-40">
-        <div class="flex items-center justify-between max-w-[1800px] w-full px-10 rounded-3xl py-3 m-auto bg-purple-650">
+        <div class="flex items-center justify-between max-w-[1800px] w-full px-10 rounded-3xl py-3 m-auto bg-green-650">
             <RouterLink to="/">
                 <img class="h-[5.25em] w-auto" src="../../public/Legacy-Website.png" loading="lazy" />
             </RouterLink>
