@@ -32,7 +32,7 @@
             return {
                 quickLinks: [
                     {name: 'Services', path: '/'},
-                    {name: 'Latest News', path: '/'},
+                    {name: 'Latest News', path: '/lastest_news'},
                     {name: 'FAQ\'s', path: '/faqs'},
                     {name: 'Month\'s Focus', path: '/'},
                     {name: 'Contact Us', path: '/contact'},

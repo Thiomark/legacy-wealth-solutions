@@ -23,8 +23,8 @@
         </section>
         <section class="lg:flex w-fit mx-auto py-7">
             <img src="@/assets/images/home/Rectangle 25.png" class="w-[36.25em] mx-auto h-[21.375em]" alt="" srcset="">
-            <div class="text-[#03353A] max-w-[45.75em] p-6 text-left">
-                <SideSectionHeader class="text-[#03353A] after:bg-[#03353A]" title="WHAT MAKES US" sub-title="DIFFERENT?"/>
+            <div class="text-green-650 max-w-[45.75em] p-6 text-left">
+                <SideSectionHeader class="text-green-650 after:bg-green-650" title="WHAT MAKES US" sub-title="DIFFERENT?"/>
                 <div class="space-y-4 text-[1.188rem] font-extralight">
                     <p>What makes us different is that we use a unique combination of simplistic planning, investment solutions and integrated financial strategies to set Legacy Employee Benefits apart from our competition.</p>
                     <p>Benefits to our clients are clear as we provide long-term, innovative wealth management. Our goal is to help our clients achieve their personal and business financial goals.</p>

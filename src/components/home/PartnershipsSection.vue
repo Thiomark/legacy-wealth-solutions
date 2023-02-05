@@ -1,6 +1,6 @@
 <template>
     <section class="mb-10">
-        <MiddleSectionHeader class="py-8 text-[#03353A] before:bg-[#03353A] after:bg-[#03353A]" title="LEGACY" sub-title="PARTNERSHIPS"/>
+        <MiddleSectionHeader class="py-8 text-green-650 before:bg-green-650 after:bg-green-650" title="LEGACY" sub-title="PARTNERSHIPS"/>
         <div class="sponsors-container">
             <img class="sponsor w-fit" v-for="(sponsor, index) in sponsors" :key="index" :src="sponsor" />
         </div>

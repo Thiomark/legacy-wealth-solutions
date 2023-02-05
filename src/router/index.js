@@ -32,6 +32,11 @@ const routes = [
     path: '/out_focus',
     name: 'OurFocus',
     component: () => import('../views/OurFocusView.vue')
+  },
+  {
+    path: '/lastest_news',
+    name: 'LatestNews',
+    component: () => import('../views/LatestNewsView.vue')
   }
 ]
 
