@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors: {
         gold: {
-          350: '#DAAC74'
+          250: '#F1CC8E',
+          350: '#DAAC74',
+          450: '#C89361'
         },
         green: {
           650: '#03353A',

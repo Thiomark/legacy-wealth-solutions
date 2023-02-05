@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="bg-green-650 h-32">
+        <div class="bg-green-650 h-[11.625em]">
             <HeaderComponent />
         </div>
         <router-view/>

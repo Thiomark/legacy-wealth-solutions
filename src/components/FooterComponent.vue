@@ -12,7 +12,7 @@
                 <h1 class="__heading">Contact Information</h1>
                 <p>Phone{{storeInformation.phone}}</p>
                 <p>Email{{storeInformation.email}}</p>
-                <div class="flex h-[4.75em]">
+                <div class="flex h-[3.5em]">
                     <img src="@/assets/images/footer/Facebookicon@2x.png" alt="" srcset="">
                     <img src="@/assets/images/footer/Twittericon@2x.png" alt="" srcset="">
                     <img src="@/assets/images/footer/LinkedINicon@2x.png" alt="" srcset="">
