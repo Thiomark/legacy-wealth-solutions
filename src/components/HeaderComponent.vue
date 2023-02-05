@@ -5,9 +5,23 @@
                 <img class="h-[5.25em] w-auto" src="../../public/Legacy-Website.png" loading="lazy" />
             </RouterLink>
             <div class="flex items-center space-x-12">
-                <nav v-if="showMenu" class="space-x-4 hidden lg:block font-semibold text-gray-50">
+                <nav v-if="showMenu" class="space-x-4 w-full hidden lg:block font-extralight text-[1.563rem] text-gray-50">
                     <RouterLink to="/"><a class="text-gray-50">Home</a></RouterLink>
-                    <RouterLink to="/about"><a class="text-gray-50">Services</a></RouterLink>
+                    <a class="text-gray-50 cursor-pointer relative" @click.prevent="toggleSubMenu">
+                        <span>Services 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" :class="showSubMenu && 'rotate-180'" class="bi transition duration-300 ease-in-out inline-block w-4 h-4 bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </span>
+                        <ul v-if="showSubMenu" class="z-40 absolute p-4 left-0 w-[17em]" style="background: #03353A 0% 0% no-repeat padding-box;">
+                            <li><RouterLink to="/"><a class="text-gray-50">Holistic Financial Planning</a></RouterLink></li>
+                            <li><RouterLink to="/"><a class="text-gray-50">Tailor-Made Investing</a></RouterLink></li>
+                            <li><RouterLink to="/"><a class="text-gray-50">Employee Beneﬁts</a></RouterLink></li>
+                            <li><RouterLink to="/"><a class="text-gray-50">Medical Cover</a></RouterLink></li>
+                            <li><RouterLink to="/"><a class="text-gray-50">Business Assurance</a></RouterLink></li>
+                            <li><RouterLink to="/"><a class="text-gray-50">Meet The Team</a></RouterLink></li>
+                        </ul>
+                    </a>
                     <RouterLink to="/lastest_news"><a class="text-gray-50">Latest News</a></RouterLink>
                     <RouterLink to="/faqs"><a class="text-gray-50">FAQ's</a></RouterLink>
                     <RouterLink to="/out_focus"><a class="text-gray-50">Our Focus</a></RouterLink>
@@ -30,12 +44,16 @@
         },
         data() {
             return {
-                showMenu: false
+                showMenu: false,
+                showSubMenu: false
             }
         },
         methods: {
             toggleMenu() {
                 this.showMenu = !this.showMenu
+            },
+            toggleSubMenu() {
+                this.showSubMenu = !this.showSubMenu
             }
         }
     }
