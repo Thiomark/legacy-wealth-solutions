@@ -17,7 +17,8 @@
             <div class="">
                 <MiddleSectionHeader class="py-[1.125em] text-white before:bg-white after:bg-white" title="Our" sub-title="Services"/> 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-fit mt-10">
-                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] transition ease-in-out duration-300 hover: bg-cover cursor-pointer relative bg-center h-[22.1875em] hover-scale">
+                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] flex-wrap flex items-center justify-center transition ease-in-out duration-300 hover: bg-cover cursor-pointer relative bg-center h-[22.1875em] hover-scale">
+                        <h1 style="text-shadow: 3px 3px 3px #000000CC;" class="text-[1.313rem] basis-0 text-center text-white flex-shrink-0 font-playfair">{{ item.title }}</h1>
                         <button class="text-white h-[2.625em] absolute bottom-4 left-0 right-0 mx-auto w-full max-w-[10.438em] text-sm bg-gradient-to-r from-gold-250 to-gold-450">Read More</button>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
 
     import MiddleSectionHeader from '@/components/MiddleSectionHeader.vue';
     import SideSectionHeader from '@/components/SideSectionHeader.vue';
-    import PartnershipsSection from '@/components/home/PartnershipsSection.vue'
+    import PartnershipsSection from '@/components/PartnershipsSection.vue'
     import GetInTouchSection from '@/components/GetInTouchSection.vue'
     import CarouselComponent from '@/components/CarouselComponent.vue'
     export default {

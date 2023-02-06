@@ -28,7 +28,7 @@
     import zestlife_18 from '@/assets/images/home/partnerships/zestlife_18.png';
     import zestlife_19 from '@/assets/images/home/partnerships/zestlife_19.png';
     import zestlife_20 from '@/assets/images/home/partnerships/zestlife_20.png';
-    import MiddleSectionHeader from '../MiddleSectionHeader.vue';
+    import MiddleSectionHeader from './MiddleSectionHeader.vue';
 
     export default {
     data() {
