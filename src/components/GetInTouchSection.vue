@@ -2,7 +2,7 @@
 <template>
     <section class="__shaped_bg"  :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns-gold.png') + ')' }">
         <div class="__fade">
-            <div class="flex justify-between items-center px-[8%] h-full">
+            <div class="lg:flex space-y-3 lg:space-y-0 justify-between items-center lg:px-[8%] h-full">
                 <p class="text-white flex flex-col justify-center font-playfair text-[2.188rem]">Let’s get in touch <span class="block font-sans text-[1.5rem] font-thin -mt-3">Contact us for assistance</span></p>
                 <button class="w-full max-w-[12.563em] border text-white h-[2.625em]">Contact Us</button>
             </div>

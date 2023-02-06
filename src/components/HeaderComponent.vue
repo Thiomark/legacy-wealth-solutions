@@ -1,11 +1,11 @@
 <template>
     <header class="fixed w-full h-[11.625em] top-0 flex items-center justify-center z-40 px-10">
-        <div class="flex items-center h-[8.938em] justify-between max-w-[1700px] w-full rounded-[2em] opacity-90 px-12 m-auto bg-green-650">
+        <div class="flex items-center h-[8.938em] justify-between max-w-[1700px] w-full rounded-[2em] opacity-90 __sides 2xl:px-10 m-auto bg-green-650">
             <RouterLink to="/">
                 <img class="h-[5.25em] w-auto" src="../../public/Legacy-Website.png" loading="lazy" />
             </RouterLink>
             <div class="flex items-center space-x-12">
-                <nav v-if="showMenu" class="space-x-4 w-full hidden lg:block font-extralight text-[1.563rem] text-gray-50">
+                <nav v-if="showMenu" class="space-x-4 w-full hidden xl:block font-extralight text-[1.563rem] text-gray-50">
                     <RouterLink to="/"><a class="text-gray-50">Home</a></RouterLink>
                     <a v-click-outside="hide" class="text-gray-50 cursor-pointer relative" @click.prevent="toggleSubMenu">
                         <span>Services 
@@ -19,7 +19,7 @@
                             <li><RouterLink to="/"><a class="text-gray-50">Employee Beneﬁts</a></RouterLink></li>
                             <li><RouterLink to="/"><a class="text-gray-50">Medical Cover</a></RouterLink></li>
                             <li><RouterLink to="/"><a class="text-gray-50">Business Assurance</a></RouterLink></li>
-                            <li><RouterLink to="/"><a class="text-gray-50">Meet The Team</a></RouterLink></li>
+                            <li><RouterLink to="/meet_the_team"><a class="text-gray-50">Meet The Team</a></RouterLink></li>
                         </ul>
                     </a>
                     <RouterLink to="/lastest_news"><a class="text-gray-50">Latest News</a></RouterLink>

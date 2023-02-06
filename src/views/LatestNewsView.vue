@@ -1,6 +1,6 @@
 <template>
     <LayoutComponent text-style="col-start-1" image="faq_1.png" text="LATEST NEWS">
-        <div class="w-fit mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 pb-[13.499em] pt-[6.563em]">
+        <div class="w-fit __sides mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 pb-[13.499em] pt-[6.563em]">
             <div class="border w-full flex flex-col max-w-[34.438em]" v-for="(card, index) in cards" :key="index">
                 <div class="h-[22.625em] w-full" :style="{ 'background-image': 'url(' + require('@/assets/images/news/news' + (index + 1) + '.png') + ')' }" />
                 <div class="p-4 flex-1 flex flex-col">

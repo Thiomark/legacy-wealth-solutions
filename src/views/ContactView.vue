@@ -1,12 +1,12 @@
 <template>
     <LayoutComponent text-style="col-start-2" image="banner_contact-us.png" text="LET’S GET IN TOUCH">
-        <div class="grid grid-cols-3 mt-20 max-w-[1300px] mx-auto">
+        <div class="grid place-items-center md:grid-cols-3 mt-20 max-w-[1300px] mx-auto">
             <div v-for="item in info" :key="item" class="capitalize">
-                <h1 class="text-[2rem] text-green-650 font-playfair">{{ item }}</h1>
+                <h1 class="text-[2rem] text-center text-green-650 font-playfair">{{ item }}</h1>
                 <h1 class="text-[1.313rem]">{{ storeInformation[item] }}</h1>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-14 max-w-[1500px] mx-auto w-full my-20">
+        <div class="grid lg:grid-cols-2 gap-14 max-w-[1500px] __sides mx-auto w-full my-20">
             <form class="" action="" method="post">
                 <div>
                     <input type="text" placeholder="Name">

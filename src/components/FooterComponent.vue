@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-green-650">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 py-8 w-fit mx-auto gap-20">
+        <div class="grid lg:grid-cols-3 __sides md:grid-cols-2 py-8 w-fit mx-auto gap-20">
             <img class="h-[13.188em]" src="@/assets/images/footer/LegacyLogo@2x.png" alt="" srcset="">
             <div class="">
                 <h1 class="__heading font-playfair">Quick Links</h1>
@@ -20,7 +20,7 @@
                 <p>{{storeInformation.slogan}}</p>
             </div>
         </div>
-        <h1 class="text-center text-[1.688rem] font-thin py-2 bg-green-750 text-white">Copyright &copy; 2022 Legacy Wealth Solutions. FSP 46619. All rights reserved.</h1>
+        <h1 class="text-center text-sm lg:text-[1.688rem] font-thin py-2 bg-green-750 text-white">Copyright &copy; 2022 Legacy Wealth Solutions. FSP 46619. All rights reserved.</h1>
     </footer>
 </template>
 

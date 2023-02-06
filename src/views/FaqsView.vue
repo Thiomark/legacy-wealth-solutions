@@ -1,6 +1,6 @@
 <template>
     <LayoutComponent image="banner_faqs.png" text="FREQUENTLY ASKED QUESTIONS">
-        <div class="min-h-[29.188em] space-y-3 py-24">     
+        <div class="min-h-[29.188em] space-y-3 py-24 __sides">     
             <div v-for="(question, index) in questionsAndAnswers" :key="index" class="max-w-[66.375em] mx-auto text-white">
                 <h1 @click="question.isQuestionOpen = !question.isQuestionOpen" :class="!question.isQuestionOpen ? 'bg-green-650': 'border border-[#151515] text-[#151515]'" class="px-3 flex items-center justify-between py-1">
                     <span>{{question.question}}</span>

@@ -4,7 +4,10 @@
             class="__layout"
             :style="{ 'background-image': 'url(' + require('@/assets/images/layout/' + image) + ')' }"
         >
-            <h1 :class="textStyle" class="text-[4.875em] text-white font-playfair text-center">{{text}}</h1>
+            <div :class="textStyle">
+                <h1 class="text-[4.875em] text-white font-playfair text-center">{{text}}</h1>
+                <h1 v-if="textSplit" class="text-[4.875em] text-white font-playfair text-center">{{textSplit}}</h1>
+            </div>
         </div>
         <slot />
     </main>
@@ -15,6 +18,7 @@
         name: 'LayoutComponent',
         props: {
             text: String,
+            textSplit: String,
             image: String,
             textStyle: String
         }

@@ -10,3 +10,7 @@
 .__shaped_bg {
     background-size: 10%;
 }
+
+.__sides {
+    @apply px-10 2xl:px-0;
+}
