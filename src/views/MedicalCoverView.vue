@@ -1,11 +1,11 @@
 <template>
-    <LayoutComponent text-style="col-start-1 text-[.9rem] mr-14" image="services_1_business-assurance.png" textSplit="SOLUTIONS" text="ENTERPRISE">
+    <LayoutComponent text-style="col-start-1 text-[.9rem] mr-14" image="services_6_medical-cover.png" textSplit="YOUR WELLNESS" text="IS OUR PRIDE">
         <ServiceComponent 
-            quote-background-image="assurance/parallex_1.png"
-            form-background-image="assurance/services-page-form2.png"
-            service-image="assurance/Component.png"
+            quote-background-image="medical/parallex_1.png"
+            form-background-image="medical/services-page-form2.png"
+            service-image="medical/Component.png"
         >
-            <p class="text-[#1A1A1A] text-[1.625rem] mt-6">Have you ever wondered what would happen to your business if passed away today? If yes then succession planning is key to ensuring the open..</p>
+            <p class="text-[#1A1A1A] text-[1.625rem] mt-6">Your Health is important… <br> It is vital to have medical cover as life happens and you never know when you may need it… We offer a range of Medical Solutions to suit your need.</p>
             <button @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
             <ul v-if="toggleReadMore">
                 <li class="text-[#1A1A1A] flex items-center text-[1.625rem]" v-for="item of succesKeys" :key="item">
@@ -24,7 +24,7 @@
     import ServiceComponent from '@/components/ServiceComponent.vue';
     
     export default {
-        name: "BusinessAssuranceView",
+        name: "MedicalCoverView",
         components: {
             LayoutComponent,
             ServiceComponent
@@ -32,7 +32,7 @@
         data() {
             return {
                 toggleReadMore: false,
-                succesKeys: ['Buy & Sell Cover', 'Key Man Insurance', 'Contingent'],
+                succesKeys: ['Medical', 'Gap Cover', 'Group Cover', 'Medical Insurance'],
             }
         }
     }

@@ -47,6 +47,11 @@ const routes = [
     path: '/business_assurance',
     name: 'BusinessAssurance',
     component: () => import('../views/BusinessAssuranceView.vue')
+  },
+  {
+    path: '/medical_cover',
+    name: 'MedicalCoverView',
+    component: () => import('../views/MedicalCoverView.vue')
   }
 ]
 
