@@ -16,19 +16,22 @@
                 <h2 class="font-extralight  -mt-2 text-[1.4rem]">{{ item.title }} <span class="text-gold-350">&#x3e;&#x3e;</span></h2>
             </div>
         </section>
-        <ServiceComponent :bg-image-style="{'background-position': 'center -8em'}" image="team/services-page-form2.png"/>
+        <MoreServicesComponent />
+        <ServiceFormComponent :bg-image-style="{'background-position': 'center -8em'}" background-image="team/services-page-form2.png"/>
     </LayoutComponent>
 </template>
 
 <script>
     import LayoutComponent from '@/components/LayoutComponent.vue';
-    import ServiceComponent from '@/components/ServiceComponent.vue';
+    import ServiceFormComponent from '@/components/service/ServiceFormComponent.vue';
+    import MoreServicesComponent from '@/components/service/MoreServicesComponent.vue';
     
     export default {
         name: "MeetTheTeamView",
         components: {
             LayoutComponent,
-            ServiceComponent
+            ServiceFormComponent,
+            MoreServicesComponent
         },
         data: () => {
             return {

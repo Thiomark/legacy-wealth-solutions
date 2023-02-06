@@ -17,8 +17,14 @@
     export default {
         name: 'MotivationBannerComponent',
         props: {
-            quote: String,
-            name: String,
+            quote: {
+                type: String,
+                default: 'Insert quote here lorem lpsum dolor'
+            },
+            name: {
+                type: String,
+                default: '- John Doe'
+            },
             image: String
         }
     }
