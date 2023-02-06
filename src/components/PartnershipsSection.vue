@@ -53,7 +53,7 @@
         display: inline-block;
         height: auto;
         max-height: 100%;
-        animation: slide-right 20s linear infinite;
+        animation: slide-right 5s linear infinite;
     }
 
     @keyframes slide-right {

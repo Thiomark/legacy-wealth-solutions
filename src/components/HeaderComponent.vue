@@ -15,7 +15,7 @@
                         </span>
                         <ul v-if="showSubMenu" class="z-40 absolute p-4 left-0 w-[17em]" style="background: #03353A 0% 0% no-repeat padding-box;">
                             <li><RouterLink to="/"><a class="text-gray-50">Holistic Financial Planning</a></RouterLink></li>
-                            <li><RouterLink to="/"><a class="text-gray-50">Tailor-Made Investing</a></RouterLink></li>
+                            <li><RouterLink to="/tailor_made_investing"><a class="text-gray-50">Tailor-Made Investing</a></RouterLink></li>
                             <li><RouterLink to="/employee_benefits"><a class="text-gray-50">Employee Beneﬁts</a></RouterLink></li>
                             <li><RouterLink to="/medical_cover"><a class="text-gray-50">Medical Cover</a></RouterLink></li>
                             <li><RouterLink to="/business_assurance"><a class="text-gray-50">Business Assurance</a></RouterLink></li>

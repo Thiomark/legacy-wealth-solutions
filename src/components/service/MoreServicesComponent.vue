@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="font-playfair text-[#1A1A1A] text-[2.875rem] text-center pt-8 pb-16 ">More Services</h1>
-        <div class="relative max-w-[1600px] mx-auto">
+        <div class="relative __sides max-w-[1600px] mx-auto">
             <div class="absolute text-green-650 text-[1.938em] flex items-center justify-between h-full w-full">
                 <button>&#x3c;</button>
                 <button>&#x3e;</button>

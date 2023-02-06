@@ -1,8 +1,8 @@
 <template>
     <div>
         <ServiceMotivationBannerComponent :quote="quote" :name="quoteBy" v-if="quoteBackgroundImage" :image="quoteBackgroundImage" />
-        <div class="flex py-14 max-w-[1600px] mx-auto">
-            <div class="___shaped_bg p-8 pr-20 flex-1 scale-110"
+        <div class="flex py-14 max-w-[1700px] mx-auto">
+            <div class="___shaped_bg p-6 pr-16 flex-1 scale-110"
                 :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns-gold.png') + ')' }"
             >
                 <slot />

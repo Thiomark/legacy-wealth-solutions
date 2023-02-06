@@ -5,7 +5,7 @@
             <h1 class="text-[2.875rem] font-playfair pt-10">Let's get in touch</h1>
             <h2 class="text-[1.938rem] font-extralight">Contact us for assistance</h2>
         </div>
-        <form class="max-w-[1404px] mx-auto py-16" action="" method="post">
+        <form class="max-w-[1404px] __sides mx-auto py-16" action="" method="post">
             <div>
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Surname">
