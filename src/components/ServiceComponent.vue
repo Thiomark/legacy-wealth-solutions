@@ -1,13 +1,13 @@
 <template>
     <div>
-        <ServiceMotivationBannerComponent v-if="quoteBackgroundImage" :image="quoteBackgroundImage" />
+        <ServiceMotivationBannerComponent :quote="quote" :name="quoteBy" v-if="quoteBackgroundImage" :image="quoteBackgroundImage" />
         <div class="flex py-14 max-w-[1600px] mx-auto">
             <div class="___shaped_bg p-8 pr-20 flex-1 scale-110"
                 :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns-gold.png') + ')' }"
             >
                 <slot />
             </div>
-            <img :src="require(`@/assets/images/${serviceImage}`)" class="z-10 h-[32.563em] w-auto" alt="" srcset="">
+            <img :src="require(`@/assets/images/${serviceImage}`)" class="z-10 h-[32.563em] w-auto m-auto" alt="" srcset="">
         </div>
         <ServiceFaqsComponent />
         <MoreServicesComponent />
@@ -43,7 +43,9 @@
                 required: true,
                 type: String
             },
-            formBackgroundImageStyle: String
+            formBackgroundImageStyle: String,
+            quote: String,
+            quoteBy: String
         }
     }
 </script>

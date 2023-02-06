@@ -52,6 +52,11 @@ const routes = [
     path: '/medical_cover',
     name: 'MedicalCoverView',
     component: () => import('../views/MedicalCoverView.vue')
+  },
+  {
+    path: '/employee_benefits',
+    name: 'EmployeeBenefitsView',
+    component: () => import('../views/EmployeeBenefitsView.vue')
   }
 ]
 
