@@ -20,7 +20,7 @@
                 <p>{{storeInformation.slogan}}</p>
             </div>
         </div>
-        <h1 class="text-center text-sm lg:text-[1.688rem] font-thin py-2 bg-green-750 text-white">Copyright &copy; 2022 Legacy Wealth Solutions. FSP 46619. All rights reserved.</h1>
+        <h1 class="text-center text-sm lg:text-[1.688rem] font-thin py-6 bg-green-750 text-white">Copyright &copy; 2022 Legacy Wealth Solutions. FSP 46619. All rights reserved.</h1>
     </footer>
 </template>
 

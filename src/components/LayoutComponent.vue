@@ -4,9 +4,9 @@
             class="__layout"
             :style="{ 'background-image': 'url(' + require('@/assets/images/layout/' + image) + ')' }"
         >
-            <div :class="textStyle">
-                <h1 class="text-[4.875em] text-white font-playfair text-center">{{text}}</h1>
-                <h1 v-if="textSplit" class="text-[4.875em] text-white font-playfair text-center">{{textSplit}}</h1>
+            <div :class="textStyle" class="px-10">
+                <h1 class="text-[4.875em] text-white font-playfair">{{text}}</h1>
+                <h1 v-if="textSplit" class="text-[4.875em] text-white font-playfair">{{textSplit}}</h1>
             </div>
         </div>
         <slot />
@@ -20,7 +20,8 @@
             text: String,
             textSplit: String,
             image: String,
-            textStyle: String
+            textStyle: String,
+            textStyleOverride: String
         }
     }
 </script>

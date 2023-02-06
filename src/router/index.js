@@ -21,6 +21,11 @@ const routes = [
     component: () => import('../views/FaqsView.vue')
   },
   {
+    path: '/indiv_latest_news',
+    name: 'IndivLatestVewsView',
+    component: () => import('../views/IndivLatestVewsView.vue')
+  },
+  {
     path: '/out_focus',
     name: 'OurFocus',
     component: () => import('../views/OurFocusView.vue')
@@ -54,6 +59,11 @@ const routes = [
     path: '/tailor_made_investing',
     name: 'TailorMadeInvestingView',
     component: () => import('../views/TailorMadeInvestingView.vue')
+  },
+  {
+    path: '/holistic_financial_planning',
+    name: 'HolisticFinancialPlanningView',
+    component: () => import('../views/HolisticFinancialPlanningView.vue')
   }
 ]
 
