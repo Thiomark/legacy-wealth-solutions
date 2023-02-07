@@ -1,10 +1,10 @@
 <template>
     <div>
         <div :style="{ 'background-image': 'url(' + require('@/assets/images/news/Rectangle.png') + ')' }" class="w-full mx-auto max-w-[112.185em] h-[37.245em] my-10"></div>
-        <div class="mx-auto max-w-[112.185em]">
+        <div class="mx-auto max-w-[112.185em] __sides">
             <h2 class="text-[1.25rem] text-[#1A1A1A] mt-20">10 June 2022</h2>
             <h1 class="text-green-650 font-playfair text-[2.625rem]">Tips on how to choose the right medical aid or hospital plan for you and your family!</h1>
-            <div class="grid grid-cols-2 mb-10 my-8 gap-10">
+            <div class="grid lg:grid-cols-2 mb-10 my-8 gap-10">
                 <div>
                     <ul class=" list-disc ml-4">
                         <li>Look at your healthcare needs</li>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <MiddleSectionHeader class="py-8 text-green-650 before:bg-green-650 after:bg-green-650" title="Related" sub-title="NEWS"/>
-            <div class="w-fit __sides mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 mb-20">
+            <div class="w-fit __sides mx-auto gap-4 grid lg:grid-cols-2 xl:grid-cols-3 mb-20">
                 <div class="border w-full flex flex-col max-w-[34.438em]" v-for="(card, index) in cards" :key="index">
                     <div class="h-[22.625em] w-full" :style="{ 'background-image': 'url(' + require('@/assets/images/news/' + card.image + '.png') + ')' }" />
                     <div class="p-4 flex-1 flex flex-col">
