@@ -7,7 +7,7 @@
             >
                 <slot />
             </div>
-            <img :src="require(`@/assets/images/${serviceImage}`)" class="z-10 h-[32.563em] w-auto m-auto" alt="" srcset="">
+            <img loading="lazy" :src="require(`@/assets/images/${serviceImage}`)" class="z-10 h-[32.563em] w-auto m-auto" alt="" srcset="">
         </div>
         <ServiceFaqsComponent />
         <MoreServicesComponent />

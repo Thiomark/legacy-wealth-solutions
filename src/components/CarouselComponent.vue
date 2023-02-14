@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <transition name="slide" mode="out-in">
-      <img :src="require(`@/assets/images/home/banner${slides[currentSlide].banner}.png`)" />
+      <img loading="lazy" :src="require(`@/assets/images/home/banner${slides[currentSlide].banner}.png`)" />
     </transition>
     <div class="indicators">
       <div v-for="(slide, index) in slides" :key="index" class="indicator" @click="setActiveSlide(index)" :style="{ backgroundColor: index === currentSlide ? 'transparent' : 'white', border: index === currentSlide ? '2px solid white' : '1px solid white' }"></div>

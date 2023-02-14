@@ -1,7 +1,7 @@
 <template>
     <main>
         <CarouselComponent />
-        <section class="max-w-[1500px] __sides py-10 mx-auto w-full grid-rows-2 lg:grid-rows-1 grid lg:grid-cols-[1fr_auto]">
+        <!-- <section class="max-w-[1500px] __sides py-10 mx-auto w-full grid-rows-2 lg:grid-rows-1 grid lg:grid-cols-[1fr_auto]">
             <div class="p-8 text-white text-left bg-green-650">
                 <div>
                     <SideSectionHeader class="text-white after:bg-white pb-4 gap-20 -mr-8" title="Legacy" sub-title="Who We Are?"/>
@@ -12,7 +12,7 @@
             <div :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.png') + ')'}"
                 @mouseenter="hover = true"
                 @mouseleave="hover = false" class="h-[27.25em] hover-scale bg-center w-[40.885em] bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer mt-10 lg:mt-0 mx-auto" alt="" srcset=""></div>
-        </section>
+        </section> -->
         <section class="py-6 pb-20 __shaped_bg" 
             :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns.png') + ')' }"
             >
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </section>
-        <section class="lg:flex w-fit mx-auto py-7">
+        <section class="lg:flex w-fit mx-auto py-7 hidden">
             <div :style="{ 'background-image': 'url(' + require('@/assets/images/home/rec.png') + ')' }" class="w-[36.25em] bg-no-repeat hover:bg-top bg-cover mx-auto h-[21.375em]" >
             </div>
             <div class="text-green-650 max-w-[45.75em] p-6 text-left">

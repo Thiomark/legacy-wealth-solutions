@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-green-650">
         <div class="grid lg:grid-cols-3 __sides md:grid-cols-2 py-8 w-fit mx-auto gap-20">
-            <img class="h-[13.188em]" src="@/assets/images/footer/LegacyLogo@2x.png" alt="" srcset="">
+            <img loading="lazy" class="h-[13.188em]" src="@/assets/images/footer/LegacyLogo@2x.png" alt="" srcset="">
             <div class="">
                 <h1 class="__heading font-playfair">Quick Links</h1>
                 <ul class="__sub__items">
@@ -13,9 +13,9 @@
                 <p>Phone{{storeInformation.phone}}</p>
                 <p>Email{{storeInformation.email}}</p>
                 <div class="flex h-[3.5em]">
-                    <img src="@/assets/images/footer/Facebookicon@2x.png" alt="" srcset="">
-                    <img src="@/assets/images/footer/Twittericon@2x.png" alt="" srcset="">
-                    <img src="@/assets/images/footer/LinkedINicon@2x.png" alt="" srcset="">
+                    <img loading="lazy" src="@/assets/images/footer/Facebookicon@2x.png" alt="" srcset="">
+                    <img loading="lazy" src="@/assets/images/footer/Twittericon@2x.png" alt="" srcset="">
+                    <img loading="lazy" src="@/assets/images/footer/LinkedINicon@2x.png" alt="" srcset="">
                 </div>
                 <p>{{storeInformation.slogan}}</p>
             </div>
