@@ -9,6 +9,7 @@
                 </div>
                 <button aria-label="Read more" @click.prevent="toggleReadMore" class="py-2">Read More >></button>
             </div>
+            
             <div class="lg:aspect-[6/4] hover-scale bg-center bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer w-full mx-auto max-w-[40em]"
                 @mouseenter="hover = true" @mouseleave="hover = false" :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.png') + ')'}">
             </div>
@@ -37,7 +38,7 @@
                 </div>
             </div>
         </section>
-        <section class="min-h-[33.438em] pb-[4.5em] bg-cover" :style="{ 'background-image': `url(${testimonial.testimonialsBG})` }">
+        <section v-lazy class="min-h-[33.438em] pb-[4.5em] bg-cover" loading="lazy" :style="{ 'background-image': `url(${testimonial.testimonialsBG})` }">
             <MiddleSectionHeader class="py-[3.125em] text-white before:bg-white after:bg-white" title="CLIENT" sub-title="TESTIMONIALS"/>
             <div class="grid md:grid-cols-2 __sides grid-rows-3 md:grid-rows-2 lg:grid-rows-1 gap-[3.125em] lg:grid-cols-3 mx-auto max-w-[1200px]">
                 <div class="text-white relative p-[1.563em] group flex flex-col items-center text-center" v-for="(item, index) in testimonial.testimonials" :key="index">
@@ -68,6 +69,7 @@
     import PartnershipsSection from '@/components/PartnershipsSection.vue'
     import GetInTouchSection from '@/components/GetInTouchSection.vue'
     import CarouselComponent from '@/components/CarouselComponent.vue'
+    
     export default {
         name: 'HomeView',
         components: {

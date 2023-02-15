@@ -55,7 +55,8 @@
     .__sub__items {
         color: white;
         font-weight: 100;
-        font-size: 0.875rem;
+        font-size: 0.9rem;
+        padding: .4em .4em .4em 0;
     }
 
     @media screen and (min-width: 768px) { 
