@@ -1,7 +1,7 @@
 <template>
     <header class="relative">
         <div class="bg-green-650 h-[8em] lg:h-[11.625em]"></div>
-        <div class="fixed w-full h-[8em] lg:h-[11.625em] top-0 flex items-center justify-center z-40 px-2 lg:px-10">            
+        <div :class="{'bg-green-650': showMenu}" class="fixed w-full h-[8em] lg:h-[11.625em] top-0 flex items-center justify-center z-40 px-2 lg:px-10">            
             <div class="flex items-center px-4 h-[5em] lg:h-[8.938em] justify-between max-w-[1700px] w-full rounded-[2em] opacity-90 2xl:px-10 m-auto bg-green-650">
                 <RouterLink to="/">
                     <img alt="Copany logo" class="lg:h-[5.25em] h-12 w-auto" src="../../public/Legacy-Website.png" loading="lazy" />

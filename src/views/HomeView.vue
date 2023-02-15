@@ -5,7 +5,7 @@
             <div class="md:p-8 p-6 text-white min-h-[24em] text-left bg-green-650">
                 <div>
                     <SideSectionHeader class="text-white after:bg-white pb-4 gap-20 lg:-mr-8" title="Legacy" sub-title="Who We Are?"/>
-                    <p class="md:text-[1.4rem] xl:text-[1.875rem]">{{limitedParagraph}}</p>
+                    <p class="lg:text-[1.1rem] xl:text-[1.875rem]">{{limitedParagraph}}</p>
                 </div>
                 <button aria-label="Read more" @click.prevent="toggleReadMore" class="py-2">Read More >></button>
             </div>
