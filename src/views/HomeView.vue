@@ -1,37 +1,36 @@
 <template>
     <main>
         <CarouselComponent />
-        <!-- <section class="max-w-[1500px] __sides py-10 mx-auto w-full grid-rows-2 lg:grid-rows-1 grid lg:grid-cols-[1fr_auto]">
-            <div class="p-8 text-white text-left bg-green-650">
+        <section class="grid w-full max-w-[1500px] mx-auto grid-rows-2 lg:py-10 p-4 gap-4 lg:grid-rows-1 lg:gap-0 lg:grid-cols-[1fr_auto]">
+            <div class="md:p-8 p-6 text-white min-h-[24em] text-left bg-green-650">
                 <div>
-                    <SideSectionHeader class="text-white after:bg-white pb-4 gap-20 -mr-8" title="Legacy" sub-title="Who We Are?"/>
-                    <p class="text=[1.875rem]">{{limitedParagraph}}</p>
+                    <SideSectionHeader class="text-white after:bg-white pb-4 gap-20 lg:-mr-8" title="Legacy" sub-title="Who We Are?"/>
+                    <p class="md:text-[1.4rem] xl:text-[1.875rem]">{{limitedParagraph}}</p>
                 </div>
-                <button @click.prevent="toggleReadMore" class="py-2">Read More >></button>
+                <button aria-label="Read more" @click.prevent="toggleReadMore" class="py-2">Read More >></button>
             </div>
-            <div :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.png') + ')'}"
-                @mouseenter="hover = true"
-                @mouseleave="hover = false" class="h-[27.25em] hover-scale bg-center w-[40.885em] bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer mt-10 lg:mt-0 mx-auto" alt="" srcset=""></div>
-        </section> -->
+            <div class="lg:aspect-[6/4] hover-scale bg-center bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer w-full mx-auto max-w-[40em]"
+                @mouseenter="hover = true" @mouseleave="hover = false" :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.png') + ')'}">
+            </div>
+        </section>
         <section class="py-6 pb-20 __shaped_bg" 
             :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns.png') + ')' }"
             >
             <div class="">
                 <MiddleSectionHeader class="py-[1.125em] text-white before:bg-white after:bg-white" title="Our" sub-title="Services"/> 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto w-fit mt-10">
-                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="w-[22.1875em] flex-wrap flex items-center justify-center transition ease-in-out duration-300 hover: bg-cover cursor-pointer relative bg-center h-[22.1875em] hover-scale">
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto w-fit mt-10">
+                    <div v-for="(item, index) in ourServices" :key="index" :style="{ 'background-image': `url(${item.image})` }" class="aspect-square max-w-[22.1875em] flex-wrap flex items-center justify-center transition ease-in-out duration-300 hover: bg-cover cursor-pointer relative bg-center hover-scale">
                         <h1 style="text-shadow: 3px 3px 3px #000000CC;" class="text-[1.313rem] basis-0 text-center text-white flex-shrink-0 font-playfair">{{ item.title }}</h1>
-                        <button class="text-white h-[2.625em] absolute bottom-4 left-0 right-0 mx-auto w-full max-w-[10.438em] text-sm bg-gradient-to-r from-gold-250 to-gold-450">Read More</button>
+                        <button aria-label="Read more" class="text-white h-[2.625em] absolute bottom-4 left-0 right-0 mx-auto w-full max-w-[10.438em] text-sm bg-gradient-to-r from-gold-250 to-gold-450">Read More</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="lg:flex w-fit mx-auto py-7 hidden">
-            <div :style="{ 'background-image': 'url(' + require('@/assets/images/home/rec.png') + ')' }" class="w-[36.25em] bg-no-repeat hover:bg-top bg-cover mx-auto h-[21.375em]" >
-            </div>
-            <div class="text-green-650 max-w-[45.75em] p-6 text-left">
+        <section class="grid lg:grid-cols-[auto_1fr] items-center gap-4 w-fit mx-auto py-7 p-4">
+            <img class="mx-auto w-full max-w-[36.25em] h-auto" aria-label="image of a man dressing formal" src="@/assets/images/home/rec.png" alt="" srcset="">
+            <div class="text-green-650 max-w-[36.25em] lg:max-w-[45.75em] text-left">
                 <SideSectionHeader class="text-green-650 after:bg-green-650" title="WHAT MAKES US" sub-title="DIFFERENT?"/>
-                <div class="space-y-4 text-[1.188rem] font-extralight">
+                <div class="space-y-4 text-[.9rem] lg:text-[1.188rem] font-extralight">
                     <p>What makes us different is that we use a unique combination of simplistic planning, investment solutions and integrated financial strategies to set Legacy Employee Benefits apart from our competition.</p>
                     <p>Benefits to our clients are clear as we provide long-term, innovative wealth management. Our goal is to help our clients achieve their personal and business financial goals.</p>
                     <p>We have truly individualized personal services from generation to generation.</p>
@@ -62,9 +61,7 @@
     import service4 from '@/assets/images/home/services/services_4.png'
     import service5 from '@/assets/images/home/services/services_5.png'
     import service6 from '@/assets/images/home/services/services_6.png'
-
     import testimonialsBG from '@/assets/images/home/home-page-testimonials-treated.png';
-
 
     import MiddleSectionHeader from '@/components/MiddleSectionHeader.vue';
     import SideSectionHeader from '@/components/SideSectionHeader.vue';
@@ -143,7 +140,9 @@
 </script>
 
 <style lang="scss">
-    .hover-scale:hover {
-        background-size: 130%;
+    @media screen and (min-width: 1024px) { 
+        .hover-scale:hover {
+            background-size: 130%;
+        }
     }
 </style>

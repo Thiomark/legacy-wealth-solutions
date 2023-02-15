@@ -29,7 +29,7 @@
 <style lang="scss" scoped>
     .__layout {
         width: 100%;
-        min-height: calc(100vh - 11.625em);
+        min-height: calc(100vh - 8em);
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
@@ -37,5 +37,10 @@
         align-items: center;
         justify-content: center;
         position: relative;
+    }
+    @media screen and (min-width: 1024px) { 
+        .carousel {
+            height: calc(100vh - 11.625em);
+        }
     }
 </style>
