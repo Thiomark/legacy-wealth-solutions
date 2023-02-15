@@ -28,7 +28,7 @@
             </div>
         </section>
         <section class="grid lg:grid-cols-[auto_1fr] items-center gap-4 w-fit mx-auto py-7 p-4">
-            <img class="mx-auto w-full max-w-[36.25em] h-auto" aria-label="image of a man dressing formal" src="@/assets/images/home/rec.png" alt="" srcset="">
+            <img class="mx-auto w-full max-w-[36.25em] h-auto" aria-label="image of a man dressing formal" src="@/assets/images/home/rec.webp" alt="" srcset="">
             <div class="text-green-650 max-w-[36.25em] lg:max-w-[45.75em] text-left">
                 <SideSectionHeader class="text-green-650 after:bg-green-650" title="WHAT MAKES US" sub-title="DIFFERENT?"/>
                 <div class="space-y-4 text-[.9rem] lg:text-[1.188rem] font-extralight">
@@ -56,12 +56,12 @@
 
 <script>
 
-    import service1 from '@/assets/images/home/services/services_1.png'
-    import service2 from '@/assets/images/home/services/services_2.png'
-    import service3 from '@/assets/images/home/services/services_3.png'
-    import service4 from '@/assets/images/home/services/services_4.png'
-    import service5 from '@/assets/images/home/services/services_5.png'
-    import service6 from '@/assets/images/home/services/services_6.png'
+    import service1 from '@/assets/images/home/services/services_1.webp'
+    import service2 from '@/assets/images/home/services/services_2.webp'
+    import service3 from '@/assets/images/home/services/services_3.webp'
+    import service4 from '@/assets/images/home/services/services_4.webp'
+    import service5 from '@/assets/images/home/services/services_5.webp'
+    import service6 from '@/assets/images/home/services/services_6.webp'
     import testimonialsBG from '@/assets/images/home/home-page-testimonials-treated.webp';
 
     import MiddleSectionHeader from '@/components/MiddleSectionHeader.vue';

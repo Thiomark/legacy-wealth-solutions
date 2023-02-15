@@ -25,15 +25,15 @@
                 moreServices: [
                     {
                         title: 'HOLISTIC FINANCIAL PLANNING',
-                        image: 'home/services/services_1.png'
+                        image: 'home/services/services_1.webp'
                     },
                     {
                         title: 'TAILOR-MADE INVESTING',
-                        image: 'home/services/services_2.png'
+                        image: 'home/services/services_2.webp'
                     },
                     {
                         title: 'EMPLOYEE BENEFITS',
-                        image: 'home/services/services_3.png'
+                        image: 'home/services/services_3.webp'
                     }
                 ]
             }
