@@ -17,7 +17,7 @@
                 <input type="checkbox" name="contact-consent" value="yes">
                 I consent to being contacted by Legacy Wealth Solutions
                 </label>
-            <button type="submit" value="Submit" class="block btn-gold mt-2 h-[2.938em]">
+            <button aria-label="submit the contact us form" type="submit" value="Submit" class="block btn-gold mt-2 h-[2.938em]">
                 Submit
             </button>
         </form>

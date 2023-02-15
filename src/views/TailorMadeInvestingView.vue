@@ -9,7 +9,7 @@
             service-image="investing/Component.png"
         >
             <p class="text-[#1A1A1A] text-[1.4rem]">We offer both local and off-shore market opportunities, Legacy prides itself in wealth creation, providing a market-leading investment portfolio designed in delivering a personalized advantage to clients committed to long-term financial reliability.</p>
-            <button @click="toggleReadMore = !toggleReadMore" class="text-white py-2">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
+            <button aria-label="read more" @click="toggleReadMore = !toggleReadMore" class="text-white py-2">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
             <p v-if="toggleReadMore" class="text-[#1A1A1A] text-[1.4rem] pb-4">Tailored solutions managing individual portfolios, our clients enjoy the benefits of personalized planning and expert advice from our team. Clients are guided by our skill and knowledge to provide the best outcomes.</p>
             <div v-if="!toggleReadMore" class="grid grid-cols-2">
                 <div>

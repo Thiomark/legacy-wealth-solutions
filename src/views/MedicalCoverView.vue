@@ -6,7 +6,7 @@
             service-image="medical/Component.png"
         >
             <p class="text-[#1A1A1A] text-[1.625rem] mt-6">Your Health is important… <br> It is vital to have medical cover as life happens and you never know when you may need it… We offer a range of Medical Solutions to suit your need.</p>
-            <button @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
+            <button aria-label="read more" @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
             <ul v-if="toggleReadMore">
                 <li class="text-[#1A1A1A] flex items-center text-[1.625rem]" v-for="item of succesKeys" :key="item">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi h-5 w-5 mr-4 bg-white rounded-full bi-check-circle-fill" viewBox="0 0 16 16">

@@ -7,7 +7,7 @@
                     <h1 class="text-green-650 text-[1.739rem] font-playfair">{{ card.title }}</h1>
                     <h2 class="text-[0.875rem] text-[#1A1A1A] py-2">{{ card.date }}</h2>
                     <p class="text-[1.313rem] flex-1">{{ card.message }}</p>
-                    <button class="btn-gold max-w-[13.813em] mx-auto h-[3.5em] mt-10">Read More</button>
+                    <button aria-label="Read more" class="btn-gold max-w-[13.813em] mx-auto h-[3.5em] mt-10">Read More</button>
                 </div>
             </div>
         </div>

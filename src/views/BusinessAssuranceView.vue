@@ -6,7 +6,7 @@
             service-image="assurance/Component.png"
         >
             <p class="text-[#1A1A1A] text-[1.625rem] mt-6">Have you ever wondered what would happen to your business if passed away today? If yes then succession planning is key to ensuring the open..</p>
-            <button @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
+            <button aria-label="read more information" @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
             <ul v-if="toggleReadMore">
                 <li class="text-[#1A1A1A] flex items-center text-[1.625rem]" v-for="item of succesKeys" :key="item">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi h-5 w-5 mr-4 bg-white rounded-full bi-check-circle-fill" viewBox="0 0 16 16">

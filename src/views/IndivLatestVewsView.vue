@@ -28,7 +28,7 @@
                     <div class="h-[22.625em] w-full" :style="{ 'background-image': 'url(' + require('@/assets/images/news/' + card.image + '.png') + ')' }" />
                     <div class="p-4 flex-1 flex flex-col">
                         <h1 class="text-green-650 text-[2.688rem] flex-1 font-playfair text-center">{{ card.title }}</h1>
-                        <button class="btn-gold max-w-[13.813em] mx-auto h-[3.5em] mt-10">Read More</button>
+                        <button aria-label="Read more" class="btn-gold max-w-[13.813em] mx-auto h-[3.5em] mt-10">Read More</button>
                     </div>
                 </div>
             </div>

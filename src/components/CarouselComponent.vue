@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <transition name="slide" mode="out-in">
-      <img loading="lazy" :src="require(`@/assets/images/home/banner${slides[currentSlide].banner}.png`)" />
+      <img alt="carousel image" loading="lazy" :src="require(`@/assets/images/home/banner${slides[currentSlide].banner}.png`)" />
     </transition>
     <div class="indicators">
       <div v-for="(slide, index) in slides" :key="index" class="indicator" @click="setActiveSlide(index)" :style="{ backgroundColor: index === currentSlide ? 'transparent' : 'white', border: index === currentSlide ? '2px solid white' : '1px solid white' }"></div>
@@ -38,7 +38,7 @@ export default {
 <style scoped>
   .carousel {
     width: 100%;
-    height: calc(100vh - 11.625em);
+    height: calc(100vh - 8em);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,8 +58,8 @@ export default {
     bottom: 2em;
   }
   .indicator {
-    width: 1.25em;
-    height: 1.25em;
+    width: .9em;
+    height: .9em;
     border-radius: 50%;
     margin: 0 10px;
     border: 1px solid white;
@@ -69,5 +69,16 @@ export default {
   }
   .slide-enter, .slide-leave-to {
     transform: translateX(-100%);
+  }
+
+  @media screen and (min-width: 1024px) { 
+    .carousel {
+      height: calc(100vh - 11.625em);
+    }
+
+    .indicator {
+      width: 1.25em;
+      height: 1.25em;
+    }
   }
 </style>

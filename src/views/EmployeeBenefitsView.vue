@@ -9,7 +9,7 @@
             service-image="benfits/Component.png"
         >
             <p class="text-[#1A1A1A] text-[1.625rem] mt-6">As an Employer be their mentor and help manage their risk and retirement planning. Benefits Matter!</p>
-            <button @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
+            <button aria-label="Read more" @click="toggleReadMore = !toggleReadMore" class="text-white py-3">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
             <p v-if="toggleReadMore" class="text-[#1A1A1A] text-[1.625rem] pb-4">Also known as Perks or Fringe Benefits, these are additional benefits offered to employees and added to their Salary or Wage Package. Employee Benefits assist employers to consider the well-being of their employees to attract, retain, motivate & reward employees, ultimately leading to happier staff and increased production.</p>
             <ul v-if="toggleReadMore">
                 <li class="text-[#1A1A1A] flex items-center text-[1.625rem]" v-for="item of succesKeys" :key="item">

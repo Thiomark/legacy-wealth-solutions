@@ -2,7 +2,7 @@
     <section class="mb-10">
         <MiddleSectionHeader class="py-8 text-green-650 before:bg-green-650 after:bg-green-650" title="LEGACY" sub-title="PARTNERSHIPS"/>
         <div class="sponsors-container">
-            <img loading="lazy" class="sponsor w-fit" v-for="(sponsor, index) in sponsors" :key="index" :src="sponsor" />
+            <img loading="lazy" class="sponsor h-[4em] lg:h-auto w-fit" v-for="(sponsor, index) in sponsors" :key="index" :alt="sponsor" :src="sponsor" />
         </div>
     </section>
 </template>

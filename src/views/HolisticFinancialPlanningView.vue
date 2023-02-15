@@ -8,7 +8,7 @@
             service-image="planning/holistic-financial-planning.png"
         >
             <p class="text-[#1A1A1A] text-[1.4rem]">Legacy offers Holistic Finacial Planning that is tailor made to your specific needs, risk insurance, investment, retirement planning, tax consulting, wills and trusts and many other associated services.</p>
-            <button @click="toggleReadMore = !toggleReadMore" class="text-white py-2">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
+            <button aria-label="Read more" @click="toggleReadMore = !toggleReadMore" class="text-white py-2">{{!toggleReadMore ? 'Read More  &#x3e;&#x3e;' : 'Show Less  &#x3c;&#x3c;'}}</button>
             <p v-if="toggleReadMore" class="text-[#1A1A1A] text-[1.4rem] pb-4">We offer a boutique service that buildson wealth accumulation and preservation.</p>
             <div v-if="toggleReadMore" class="grid grid-cols-2">
                 <div>
