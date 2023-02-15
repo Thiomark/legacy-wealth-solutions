@@ -37,33 +37,30 @@
             </div>
         </div>
         <nav class="fixed bg-green-650 xl:hidden border-t border-teal-900 z-50 lg:top-[11.625em] top-32 w-full" v-if="showMenu">
-            <div class="z-40 p-6" v-if="showMenu && !showSubMenu">
+            <div class="z-40 p-6" v-if="showMenu">
                 <RouterLink to="/"><a class="text-gray-50 py-1 flex items-center justify-between w-full">Home</a></RouterLink>
                 <button class="w-full" @click.prevent="toggleSubMenu">
                     <a class="text-gray-50 py-1 flex items-center justify-between w-full">
                         <span>Services</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi transition -rotate-90 duration-300 ease-in-out w-4 h-4 bi-chevron-down" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"  :class="showSubMenu && 'rotate-180'" class="bi transition duration-300 ease-in-out w-4 h-4 bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </a>
                 </button>
+                <ul class="z-50 px-6 space-y-1.5" v-if="true">
+                    <li><RouterLink to="/holistic_financial_planning"><a class="text-gray-50">Holistic Financial Planning</a></RouterLink></li>
+                    <li><RouterLink to="/tailor_made_investing"><a class="text-gray-50">Tailor-Made Investing</a></RouterLink></li>
+                    <li><RouterLink to="/employee_benefits"><a class="text-gray-50">Employee Beneﬁts</a></RouterLink></li>
+                    <li><RouterLink to="/medical_cover"><a class="text-gray-50">Medical Cover</a></RouterLink></li>
+                    <li><RouterLink to="/business_assurance"><a class="text-gray-50">Business Assurance</a></RouterLink></li>
+                    <li><RouterLink to="/meet_the_team"><a class="text-gray-50">Meet The Team</a></RouterLink></li>
+                    <li><RouterLink to="/indiv_latest_news"><a class="text-gray-50">Indiv Latest News</a></RouterLink></li>
+                </ul>
                 <RouterLink to="/lastest_news"><a class="text-gray-50 py-1 flex items-center justify-between w-full">Latest News</a></RouterLink>
                 <RouterLink to="/faqs"><a class="text-gray-50 py-1 flex items-center justify-between w-full">FAQ's</a></RouterLink>
                 <RouterLink to="/out_focus"><a class="text-gray-50 py-1 flex items-center justify-between w-full">Our Focus</a></RouterLink>
                 <RouterLink to="/contact"><a class="text-gray-50 py-1 flex items-center justify-between w-full">Contact Us</a></RouterLink>
             </div>
-            <ul class="z-50 p-6 space-y-1.5" v-if="showSubMenu">
-                <button @click.prevent="toggleSubMenu" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi transition rotate-90 duration-300 ease-in-out w-6 h-6 bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg></button>
-                <li><RouterLink to="/holistic_financial_planning"><a class="text-gray-50">Holistic Financial Planning</a></RouterLink></li>
-                <li><RouterLink to="/tailor_made_investing"><a class="text-gray-50">Tailor-Made Investing</a></RouterLink></li>
-                <li><RouterLink to="/employee_benefits"><a class="text-gray-50">Employee Beneﬁts</a></RouterLink></li>
-                <li><RouterLink to="/medical_cover"><a class="text-gray-50">Medical Cover</a></RouterLink></li>
-                <li><RouterLink to="/business_assurance"><a class="text-gray-50">Business Assurance</a></RouterLink></li>
-                <li><RouterLink to="/meet_the_team"><a class="text-gray-50">Meet The Team</a></RouterLink></li>
-                <li><RouterLink to="/indiv_latest_news"><a class="text-gray-50">Indiv Latest News</a></RouterLink></li>
-            </ul>
         </nav>
     </header>
 </template>
@@ -95,7 +92,6 @@
             },
             toggleSubMenu() {
                 this.showSubMenu = !this.showSubMenu
-                console.log(this.showSubMenu)
             },
             hide () {
                 if(this.showMenu === false) return;

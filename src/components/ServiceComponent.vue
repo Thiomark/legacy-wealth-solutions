@@ -2,12 +2,12 @@
     <div>
         <ServiceMotivationBannerComponent :quote="quote" :name="quoteBy" v-if="quoteBackgroundImage" :image="quoteBackgroundImage" />
         <div class="flex py-14 max-w-[1700px] __sides mx-auto">
-            <div class="___shaped_bg p-6 pr-16 ml-[2em] flex-1 scale-110"
+            <div class="___shaped_bg lg:h-auto min-h-[20em] p-4 lg:p-6 lg:pr-16 lg:ml-[2em] flex-1 scale-110"
                 :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns-gold.png') + ')' }"
             >
                 <slot />
             </div>
-            <img loading="lazy" :src="require(`@/assets/images/${serviceImage}`)" class="z-10 h-[32.563em] w-auto m-auto" alt="" srcset="">
+            <img loading="lazy" :src="require(`@/assets/images/${serviceImage}`)" class="z-10 hidden lg:block h-[32.563em] w-auto m-auto" alt="" srcset="">
         </div>
         <ServiceFaqsComponent />
         <MoreServicesComponent />

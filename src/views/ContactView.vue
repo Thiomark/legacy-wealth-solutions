@@ -55,12 +55,6 @@
             font-size: .8rem;
         }
 
-        div {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: .6em;
-        }
-
         label {
             display: inline-block;
             font-size: .8rem;

@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1 class="font-playfair text-[#1A1A1A] text-[2.875rem] text-center pt-8 pb-16 ">More Services</h1>
-        <div class="relative __sides max-w-[1600px] mx-auto">
+    <div class=" overflow-x-hidden">
+        <h1 class="font-playfair text-[#1A1A1A] text-[1.9rem] lg:text-[2.875rem] text-center pt-4 lg:pt-8 pb-4 lg:pb-16 ">More Services</h1>
+        <div class="relative px-4 lg:px-8 max-w-[1600px] mx-auto">
             <div class="absolute text-green-650 text-[1.938em] flex items-center justify-between h-full w-full">
                 <button aria-label="go to the previous item">&#x3c;</button>
                 <button aria-label="go to the next item">&#x3e;</button>
