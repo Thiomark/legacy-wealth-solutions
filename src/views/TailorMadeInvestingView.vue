@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-1 text-[.6rem]" image="services_4_specialized-investing.png" textSplit="FOR LOCAL AND INTERNATIONAL" text="CREATING WEALTH SOLUTIONS">
+    <LayoutComponent text-style="col-start-1 text-[.6rem]" image="services_4_specialized-investing.webp" textSplit="FOR LOCAL AND INTERNATIONAL" text="CREATING WEALTH SOLUTIONS">
         <ServiceComponent 
             quote="Don’t SAVE what is left after spending, spend what is left after SAVING"
             quoteBy="- Richard Branson"

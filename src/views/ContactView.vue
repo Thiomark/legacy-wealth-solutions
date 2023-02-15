@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-2" image="banner_contact-us.png" text="LET’S GET IN TOUCH">
+    <LayoutComponent text-style="col-start-2" image="banner_contact-us.webp" text="LET’S GET IN TOUCH">
         <div class="grid place-items-center md:grid-cols-3 mt-4 lg:mt-20 max-w-[1300px] mx-auto">
             <div v-for="item in info" :key="item" class="capitalize">
                 <h1 class="text-[1.3rem] lg:text-[2rem] text-center text-green-650 font-playfair">{{ item }}</h1>

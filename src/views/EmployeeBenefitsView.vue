@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-1 text-[.7rem] mr-14" image="services_2_employee-benefits.png" textSplit="STAFF SOLUTIONS" text="PERSONALIZED, EMPLOYEE BENEFITS MANAGEMENT AND">
+    <LayoutComponent text-style="col-start-1 text-[.7rem] mr-14" image="services_2_employee-benefits.webp" textSplit="STAFF SOLUTIONS" text="PERSONALIZED, EMPLOYEE BENEFITS MANAGEMENT AND">
         <ServiceComponent 
             quote="Employee’s come first, if you take care of your staff your staff will take care of you and your business"
             quoteBy="- Richard Branson"

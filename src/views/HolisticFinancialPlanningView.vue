@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-1" image="services_5-holistic-financial-planning.png" text="HOLISTIC FINANCIAL" textSplit="PLANNING">
+    <LayoutComponent text-style="col-start-1" image="services_5-holistic-financial-planning.webp" text="HOLISTIC FINANCIAL" textSplit="PLANNING">
         <ServiceComponent 
             quote="Don’t be Afraid, Be Focused, Be Determined, Be Hopeful, Be Empowered”"
             quoteBy="- Michelle Obama"

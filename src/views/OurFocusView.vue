@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-1" image="banner_our-focus.png" text="OUR FOCUS">
+    <LayoutComponent text-style="col-start-1" image="banner_our-focus.webp" text="OUR FOCUS">
         <div class="max-w-[1543px] px-4 lg:px-10 w-full relative grid lg:grid-cols-[auto_1fr] mx-auto mt-[2em] lg:mt-[10.704em]">
             <img alt="image of a lady" loading="lazy" class="mx-auto" :src="require(`@/assets/images/ourfocus/Rectangle.png`)" />
             <div class="flex space-y-3 lg:p-8 flex-col justify-center max-w-md mx-auto lg:max-w-full lg:mx-0">

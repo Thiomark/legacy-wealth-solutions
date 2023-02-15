@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-1 text-[.9rem] mr-14" image="services_3_meet-the-team.png" textSplit="MEET THE PASSION AND" text="FOCUS BEHIND LEGACY">
+    <LayoutComponent text-style="col-start-1 text-[.9rem] mr-14" image="services_3_meet-the-team.webp" textSplit="MEET THE PASSION AND" text="FOCUS BEHIND LEGACY">
         <div class="mx-auto w-full max-w-[1600px] text-[#434343] text-center py-[5.429em] space-y-10 text-[1.438rem]">
             <p>Our independence means that our focus is clearly on our clients’ best interests. We are not affiliated to any product providers and we maintain our objectivity at all times to provide our clients with our best possible advice to help them achieve their personal and business goals.</p>
             <p>We believe that customer loyalty is a direct result of our dedication to helping our clients manage risk and investments, improve cash flow, and reduce or defer income. Our personal commitment to our clients is always uncompromising.</p>

@@ -1,5 +1,5 @@
 <template>
-    <LayoutComponent text-style="col-start-1 text-[.9rem] mr-14" image="services_1_business-assurance.png" textSplit="SOLUTIONS" text="ENTERPRISE">
+    <LayoutComponent text-style="col-start-1 text-[.9rem] mr-14" image="services_1_business-assurance.webp" textSplit="SOLUTIONS" text="ENTERPRISE">
         <ServiceComponent 
             quote-background-image="assurance/parallex_1.png"
             form-background-image="assurance/services-page-form2.png"

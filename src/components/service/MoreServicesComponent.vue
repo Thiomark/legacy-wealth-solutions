@@ -25,7 +25,7 @@
                 moreServices: [
                     {
                         title: 'HOLISTIC FINANCIAL PLANNING',
-                        image: 'home/services/services_1.webp'
+                        image: 'home/services/services_1.webp.webp'
                     },
                     {
                         title: 'TAILOR-MADE INVESTING',
