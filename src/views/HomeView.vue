@@ -9,10 +9,10 @@
                 </div>
                 <button aria-label="Read more" @click.prevent="toggleReadMore" class="py-2">Read More >></button>
             </div>
-            
-            <div class="lg:aspect-[6/4] hover-scale bg-center bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer w-full mx-auto max-w-[40em]"
+            <img class="w-full lg:aspect-[6/4] mx-auto max-w-[40em]" src="@/assets/images/home/Rectangle49@2x.png" loading="lazy" alt="image of a man and and a women" srcset="">
+            <!-- <div class=" hover-scale bg-center bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer"
                 @mouseenter="hover = true" @mouseleave="hover = false" :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.png') + ')'}">
-            </div>
+            </div> -->
         </section>
         <section class="py-6 pb-20 __shaped_bg" 
             :style="{ 'background-image': 'url(' + require('@/assets/images/home/patterns.png') + ')' }"

@@ -83,6 +83,12 @@
                 showSubMenu: false
             }
         },
+        watch: {
+            '$route': function() {
+                this.showMenu = false;
+                this.showSubMenu = false;
+            }
+        },
         methods: {
             toggleMenu() {
                 this.showMenu = !this.showMenu

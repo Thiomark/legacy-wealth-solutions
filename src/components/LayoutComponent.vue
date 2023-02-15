@@ -4,9 +4,9 @@
             class="__layout"
             :style="{ 'background-image': 'url(' + require('@/assets/images/layout/' + image) + ')' }"
         >
-            <div :class="textStyle" class="px-10">
-                <h1 class="text-[4.875em] text-white font-playfair">{{text}}</h1>
-                <h1 v-if="textSplit" class="text-[4.875em] text-white font-playfair">{{textSplit}}</h1>
+            <div :class="textStyle" class="px-10 w-fit text-center lg:text-left">
+                <h1 class="text-[2.875em] lg:text-[4.875em] text-white font-playfair">{{text}}</h1>
+                <h1 v-if="textSplit" class="text-[2.875em] lg:text-[4.875em] text-white font-playfair">{{textSplit}}</h1>
             </div>
         </div>
         <slot />
@@ -32,15 +32,20 @@
         min-height: calc(100vh - 8em);
         background-repeat: no-repeat;
         background-size: cover;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
+        display: grid;
         position: relative;
+        grid-template-columns: 1fr;
     }
     @media screen and (min-width: 1024px) { 
         .carousel {
             height: calc(100vh - 11.625em);
         }
+
+        .__layout { 
+            grid-template-columns: 1fr 1fr;
+        }
+
     }
 </style>
