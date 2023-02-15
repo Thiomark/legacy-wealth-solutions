@@ -9,9 +9,9 @@
                 </div>
                 <button aria-label="Read more" @click.prevent="toggleReadMore" class="py-2">Read More >></button>
             </div>
-            <img class="w-full lg:aspect-[6/4] mx-auto max-w-[40em]" src="@/assets/images/home/Rectangle49@2x.png" loading="lazy" alt="image of a man and and a women" srcset="">
+            <img class="w-full lg:aspect-[6/4] mx-auto max-w-[40em]" src="@/assets/images/home/Rectangle49@2x.webp" loading="lazy" alt="image of a man and and a women" srcset="">
             <!-- <div class=" hover-scale bg-center bg-cover bg-no-repeat transition duration-500 ease-in-out cursor-pointer"
-                @mouseenter="hover = true" @mouseleave="hover = false" :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.png') + ')'}">
+                @mouseenter="hover = true" @mouseleave="hover = false" :style="{'background-image': 'url(' + require('@/assets/images/home/Rectangle49@2x.webp') + ')'}">
             </div> -->
         </section>
         <section class="py-6 pb-20 __shaped_bg" 
@@ -62,7 +62,7 @@
     import service4 from '@/assets/images/home/services/services_4.png'
     import service5 from '@/assets/images/home/services/services_5.png'
     import service6 from '@/assets/images/home/services/services_6.png'
-    import testimonialsBG from '@/assets/images/home/home-page-testimonials-treated.png';
+    import testimonialsBG from '@/assets/images/home/home-page-testimonials-treated.webp';
 
     import MiddleSectionHeader from '@/components/MiddleSectionHeader.vue';
     import SideSectionHeader from '@/components/SideSectionHeader.vue';
